@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/src/css/faq.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <a href="" id="logo"><span>Every</span> Shop</a>
+        <ul class="menu-list">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="header-right">
+            <ul class="header-auth">
+                <li><a href="login.html" class="btn">Login</a></li>
+                <li><a href="" class="btn btn-fill">Register</a></li>
+            </ul>
+            <div class="cart-logo">
+                <a href="cart.html" class="cart-btn"><i class="bi bi-cart3"></i></a>
+                <p>0</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="faq">
+        <div class="item">
+            <button class="item-row" onClick="openFaq(event)">
+                <p class="title">How much money should I pay for delivery?</p>
+                <p class="icon">+</p>
+            </button>
+
+            <div class="content-box hide">You don't have to pay for delivery. It's totally free!</div>
+        </div>
+        <div class="item" >
+            <button class="item-row" onClick="openFaq(event)">
+                <p class="title">How many days should I wait before reaching you?</p>
+                <p class="icon">+</p>
+            </button>
+
+            <div class="content-box hide">It is enough to wait 3-7 days for the delivery.</div>
+        </div>
+        <div class="item" onClick="openFaq(event)">
+            <button class="item-row">
+                <p class="title">Do you have refund policy?</p>
+                <p class="icon">+</p>
+            </button>
+
+            <div class="content-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur.</div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-content">
+                <a href="" id="logo" class="footer-logo"><span>Every</span> Shop</a>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro nostrum nulla harum doloribus</p>
+            </div>
+            <ul class="footer-content">
+                <h4>Useful Links</h4>
+                <li><i class="bi bi-chevron-double-right"></i> Shop</li>
+                <li><i class="bi bi-chevron-double-right"></i> About Us</li>
+                <li><i class="bi bi-chevron-double-right"></i> BestSellers</li>
+                <li><i class="bi bi-chevron-double-right"></i> Contact Us</li>
+            </ul>
+            <ul class="footer-content">
+                <h4>Follow Us</h4>
+                <li><i class="bi bi-facebook"></i> Facebook</li>
+                <li><i class="bi bi-instagram"></i> Instagram</li>
+                <li><i class="bi bi-linkedin"></i> Linkedin</li>
+            </ul>
+            <ul class="footer-content">
+                <h4>Address</h4>
+                <li><i class="bi bi-geo-alt"></i> Kirtipur-02, Kathmandu</li>
+                <li><i class="bi bi-telephone"></i> +977 9802384202</li>
+                <li><i class="bi bi-envelope-at"></i> mail@1234567.com</li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright c Anup Maharjan</p>
+        </div>
+    </footer>
+
+    <script src="/src/js/faq.js"></script>
+</body>
+
+</html>

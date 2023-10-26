@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/src/css/cart.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <a href="" id="logo"><span>Every</span> Shop</a>
+        <ul class="menu-list">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="header-right">
+            <ul class="header-auth">
+                <li><a href="login.html" class="btn">Login</a></li>
+                <li><a href="" class="btn btn-fill">Register</a></li>
+            </ul>
+            <div class="cart-logo">
+                <a href="cart.html" class="cart-btn"><i class="bi bi-cart3"></i></a>
+                <p>0</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="cart">
+        <div class="cart-container">
+            <ul class="container-header">
+                <li>Items in Cart</li>
+                <li>Unit Price</li>
+                <li>Quantity</li>
+                <li>Total</li>
+                <li>Edit</li>
+            </ul>
+            <ul>
+                <li>hiud</li>
+                <li>$ 77</li>
+                <li>5</li>
+                <li>$ 678</li>
+                <li><button class="btn">remove</button></li>
+            </ul>
+            <ul>
+                <li>hiud</li>
+                <li>$ 77</li>
+                <li>5</li>
+                <li>$ 678</li>
+                <li><button class="btn">remove</button></li>
+            </ul>
+        </div>
+        <div class="cart-summary">
+            <h1>Summary</h1>
+            <div class="summary-content">
+                <div class="summary-block">
+                    <div class="cart__label">Subtotal</div>
+                    <p class="cart__price" id="summaryContainer">Rs. 0</p>
+                </div>
+                <div class="summary-block">
+                    <div class="cart__label">Shipping</div>
+                    <p class="cart__price" id="summaryShipping">Rs. 0</p>
+                </div>
+                <div class="summary-block">
+                    <div class="cart__label">VAT</div>
+                    <p class="cart__price" id="summaryVat"></p>
+                </div>
+
+                <div class="summary-block">
+                    <input id="coupoun" type="text" placeholder="Enter Coupoun" class="cart-coupoun" />
+                    <button class="btn" type="submit" onclick="addCoupoun()">
+                        ADD
+                    </button>
+                </div>
+                <div class="summary-block">
+                    <div class="cart__label">Coupoun Discount</div>
+                    <p id="discount">- Rs. 0</p>
+                </div>
+                <div class="summary-block">
+                    <div class="cart__label">Total</div>
+                    <p class="cart__price">Rs. <span id="summaryTotal"></span></p>
+                </div>
+            <button class="btn btn-fill" id="checkoutbtn">Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-content">
+                <a href="" id="logo" class="footer-logo"><span>Every</span> Shop</a>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro nostrum nulla harum doloribus</p>
+            </div>
+            <ul class="footer-content">
+                <h4>Useful Links</h4>
+                <li><i class="bi bi-chevron-double-right"></i> Shop</li>
+                <li><i class="bi bi-chevron-double-right"></i> About Us</li>
+                <li><i class="bi bi-chevron-double-right"></i> BestSellers</li>
+                <li><i class="bi bi-chevron-double-right"></i> Contact Us</li>
+            </ul>
+            <ul class="footer-content">
+                <h4>Follow Us</h4>
+                <li><i class="bi bi-facebook"></i> Facebook</li>
+                <li><i class="bi bi-instagram"></i> Instagram</li>
+                <li><i class="bi bi-linkedin"></i> Linkedin</li>
+            </ul>
+            <ul class="footer-content">
+                <h4>Address</h4>
+                <li><i class="bi bi-geo-alt"></i> Kirtipur-02, Kathmandu</li>
+                <li><i class="bi bi-telephone"></i> +977 9802384202</li>
+                <li><i class="bi bi-envelope-at"></i> mail@1234567.com</li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright c Anup Maharjan</p>
+        </div>
+    </footer>
+</body>
+
+</html>
