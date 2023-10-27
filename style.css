@@ -159,12 +159,14 @@ header{
     object-fit: cover;
     object-position: center;
 }
-.gallery-item button{
+.gallery-item a{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-weight: 600;
+    min-width: 136px;
+    text-align: center;
     border: none;
     padding: 8px 15px;
     background: #fff;

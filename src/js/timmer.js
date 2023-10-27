@@ -1,8 +1,20 @@
-let countDownDate = new Date('Nov 16, 2023 00:00:00').getTime()
-console.log(countDownDate)
+let months = ['Janauray','Febrauary','March','April','May','June','July','August','Septemeber','October','November','December']
+let days = ['Sunday', 'Monday', 'Tuesday', 'Thursday', 'Friday', 'Saturday']
+
+let countDownDate = new Date()
+countDownDate.setDate(countDownDate.getDate() + 12)
+countDownDate.setHours('09')
+countDownDate.setMinutes('15')
+let countdownTime = countDownDate.getTime()
+
+
+
+let countdown = document.getElementById('countdown-date')
+countdown.innerHTML = `Offer ends on ${days[countDownDate.getDay()]}, ${countDownDate.getDate()} ${months[countDownDate.getMonth()]} ${countDownDate.getFullYear()} 9:15`
+
 let x = setInterval(() => {
     let now = new Date().getTime()
-    let distance = countDownDate - now;
+    let distance = countdownTime - now;
 
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));

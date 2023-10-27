@@ -43,17 +43,17 @@
         <div class="gallery">
             <div class="gallery-item">
                 <img src="images/alisa-anton-UqDhpC_rc_I-unsplash.jpg" alt="">
-                <button>Men's Fashion</button>
+                <a href="#products" class="btn" data-category="Home & Lifestyle" onclick="showCategorizedProducts(event)">Home & Lifestyle</a>
             </div>
             <div class="gallery-item-span">
                 <div class="gallery-item">
                     <img src="images/cat-han-Ks6wd1Zyf1o-unsplash.jpg" alt="">
-                    <button>Men's Fashion</button>
+                    <a href="#products" class="btn" data-category="Men's Fashion" onclick="showCategorizedProducts(event)">Men's Fashion</a>
                 </div>
             </div>
             <div class="gallery-item">
                 <img src="images/manu-camargo-BkaD07QEiJc-unsplash.jpg" alt="">
-                <button>Men's Fashion</button>
+                <a href="#products" class="btn" data-category="Health & Beauty" onclick="showCategorizedProducts(event)">Health & Beauty</a>
             </div>
             
         </div>
@@ -62,7 +62,7 @@
     <section class="special-offer">
         <div class="slogan">
             <h2>Get <span>50% Off</span> Before It's too Late!</h2>
-            <p><em>Offer ends on Saturday, 4 November 2023 9:14</em></hp>
+            <p><em id="countdown-date">Offer ends on Saturday, 4 November 2023 9:15</em></p>
         </div>
         <div class="launch-time">
             <div>
@@ -84,88 +84,19 @@
         </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
         <h2>Products</h2>
         <ul class="product-categories">
-            <li class="active">All</li>
+            <!-- <li class="active">All</li>
             <li>Men's Fashion</li>
             <li>Women Fashion</li>
             <li>Health & Beauty</li>
             <li>Goceries</li>
             <li>Home and Lifestyle</li>
-            <li>Electronic Devices</li>
+            <li>Electronic Devices</li> -->
         </ul>
         <div class="product-container">
-            <div class="product">
-                <img src="https://i.dummyjson.com/data/products/6/4.jpg" alt="" class="product-img">
-                <div class="product-info">
-                    <h4>iPhone 9</h4>
-                    <h3>$ 594</h3>
-                    <p><span>$ 23</span> -20%</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <button class="btn btn-fill">Add to Cart <i class="bi bi-cart3"></i></button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://i.dummyjson.com/data/products/1/thumbnail.jpg" alt="" class="product-img">
-                <div class="product-info">
-                    <h4>iPhone 9</h4>
-                    <h3>$ 594</h3>
-                    <p><span>$ 23</span> -20%</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <button class="btn btn-fill">Add to Cart <i class="bi bi-cart3"></i></button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://i.dummyjson.com/data/products/36/thumbnail.jpg" alt="" class="product-img">
-                <div class="product-info">
-                    <h4>iPhone 9</h4>
-                    <h3>$ 594</h3>
-                    <p><span>$ 23</span> -20%</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <button class="btn btn-fill">Add to Cart <i class="bi bi-cart3"></i></button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://i.dummyjson.com/data/products/8/thumbnail.jpg" alt="" class="product-img">
-                <div class="product-info">
-                    <h4>iPhone 9</h4>
-                    <h3>$ 594</h3>
-                    <p><span>$ 23</span> -20%</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <button class="btn btn-fill">Add to Cart <i class="bi bi-cart3"></i></button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://i.dummyjson.com/data/products/26/thumbnail.jpg" alt="" class="product-img">
-                <div class="product-info">
-                    <h4>iPhone 9</h4>
-                    <h3>$ 594</h3>
-                    <p><span>$ 23</span> -20%</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <button class="btn btn-fill">Add to Cart <i class="bi bi-cart3"></i></button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://i.dummyjson.com/data/products/16/thumbnail.jpg" alt="" class="product-img">
-                <div class="product-info">
-                    <h4>iPhone 9</h4>
-                    <h3>$ 594</h3>
-                    <p><span>$ 23</span> -20%</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <button class="btn btn-fill">Add to Cart <i class="bi bi-cart3"></i></button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://i.dummyjson.com/data/products/11/thumbnail.jpg" alt="" class="product-img">
-                <div class="product-info">
-                    <h4>iPhone 9</h4>
-                    <h3>$ 594</h3>
-                    <p><span>$ 23</span> -20%</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <button class="btn btn-fill">Add to Cart <i class="bi bi-cart3"></i></button>
-                </div>
-            </div>
+            <!-- dynamic product data -->
         </div>
     </section>
 
