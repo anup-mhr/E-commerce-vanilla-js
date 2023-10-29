@@ -18,6 +18,10 @@
     justify-content: center;
     padding: 10px;
 }
+.cart-container ul li i{
+    padding: 0 5px;
+    cursor: pointer;
+}
 .cart-container ul li:first-child{
     grid-column: auto/ span 2;
 }

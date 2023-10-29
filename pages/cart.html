@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <a href="" id="logo"><span>Every</span> Shop</a>
+        <a href="/" id="logo"><span>Every</span> Shop</a>
         <ul class="menu-list">
             <li><a href="#">Shop</a></li>
             <li><a href="#">About Us</a></li>
@@ -40,20 +40,9 @@
                 <li>Total</li>
                 <li>Edit</li>
             </ul>
-            <ul>
-                <li>hiud</li>
-                <li>$ 77</li>
-                <li>5</li>
-                <li>$ 678</li>
-                <li><button class="btn">remove</button></li>
-            </ul>
-            <ul>
-                <li>hiud</li>
-                <li>$ 77</li>
-                <li>5</li>
-                <li>$ 678</li>
-                <li><button class="btn">remove</button></li>
-            </ul>
+            <div class="cart-inner">
+                <!-- dynamic cart items data -->
+            </div>
         </div>
         <div class="cart-summary">
             <h1>Summary</h1>
@@ -85,7 +74,7 @@
                     <div class="cart__label">Total</div>
                     <p class="cart__price">Rs. <span id="summaryTotal"></span></p>
                 </div>
-            <button class="btn btn-fill" id="checkoutbtn">Checkout</button>
+                <button class="btn btn-fill" id="checkoutBtn">Checkout</button>
             </div>
         </div>
     </section>
@@ -122,6 +111,7 @@
     </footer>
 
     <script src="/src/js/header.js"></script>
+    <script src="/src/js/cart.js"></script>
 </body>
 
 </html>
