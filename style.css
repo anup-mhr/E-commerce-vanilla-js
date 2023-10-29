@@ -21,6 +21,15 @@ a{
     color: #da2128;
     font-size: 13px;
     box-shadow: 0 0 2px #da2128;
+    cursor: pointer;
+}
+.btn:disabled{
+    background: #b75054;
+    border: #b75054;
+}
+.btn:disabled:hover{
+    background-color: #b75054;
+    cursor: not-allowed;
 }
 .btn:hover{
     background-color: #da2128;
@@ -85,6 +94,9 @@ header{
     display: flex;
     align-items: center;
     gap: 15px;
+}
+.header-auth p{
+    font-size: 13px;
 }
 .cart-logo{
     font-size: 28px;

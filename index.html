@@ -21,12 +21,12 @@
 
         <div class="header-right">
             <ul class="header-auth">
-                <li><a href="login.html" class="btn">Login</a></li>
-                <li><a href="" class="btn btn-fill">Register</a></li>
+                <li><a href="/pages/login.html" class="btn">Login</a></li>
+                <li><a href="/pages/register.html" class="btn btn-fill">Register</a></li>
             </ul>
             <div class="cart-logo">
-                <a href="cart.html" class="cart-btn"><i class="bi bi-cart3"></i></a>
-                <p>0</p>
+                <a href="/pages/cart.html" class="cart-btn"><i class="bi bi-cart3"></i></a>
+                <p id="total-quantity">0</p>
             </div>
         </div>
     </header>
@@ -87,13 +87,7 @@
     <section class="products" id="products">
         <h2>Products</h2>
         <ul class="product-categories">
-            <!-- <li class="active">All</li>
-            <li>Men's Fashion</li>
-            <li>Women Fashion</li>
-            <li>Health & Beauty</li>
-            <li>Goceries</li>
-            <li>Home and Lifestyle</li>
-            <li>Electronic Devices</li> -->
+            <!-- Dynamic category data -->
         </ul>
         <div class="product-container">
             <!-- dynamic product data -->
@@ -139,6 +133,8 @@
 
     <script src="/src/js/toast-notification.js"></script>
     <script src="/src/js/timmer.js"></script>
+    <script src="/src/js/header.js"></script>
+    <script src="/src/js/cart.js"></script>
     <script src="/src/script.js"></script>
 </body>
 

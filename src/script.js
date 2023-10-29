@@ -28,9 +28,8 @@ function showProducts(products) {
     productDOM.innerHTML = products.map(item => {
         let { id, title, price, discountPercentage, rating, thumbnail } = item
         let itemRating = ''
-        for (let i = 0; i < Math.round(rating); i++) {
-            itemRating += '⭐';
-        }
+        for (let i = 0; i < Math.round(rating); i++) itemRating += '⭐';
+        let search = cart.find(x => x.id === id);
         let discountedPrice = price - (price * discountPercentage) / 100
         return `<div class="product">
         <img src="${thumbnail}" alt="${title}" class="product-img">
@@ -39,27 +38,27 @@ function showProducts(products) {
             <h3>$ ${discountedPrice.toFixed(2)}</h3>
             <p><span>$ ${price}</span> -${discountPercentage}%</p>
             <div class="stars">${itemRating}</div >
-            <button class="btn btn-fill" data-id=${id}>Add to Cart <i class="bi bi-cart3"></i></button>
+            <button class="btn btn-fill" ${search? 'disabled':''} data-id='${id}' onclick='addCartItem(event)'> ${search? 'Already in cart':'Add to Cart <i class="bi bi-cart3"></i>'}</button>
         </div >
     </div > `
     }).join('')
 }
 
 function showCategories(target) {
-    categoryDOM.innerHTML = categories.map(category=>{
-        return `<li ${category==target?'class="active"':''} data-category="${category}" onclick='showCategorizedProducts(event)'>${category}</li>`
+    categoryDOM.innerHTML = categories.map(category => {
+        return `<li ${category == target ? 'class="active"' : ''} data-category="${category}" onclick='showCategorizedProducts(event)'>${category}</li>`
     }).join('')
 }
 
-function showCategorizedProducts(e){
+function showCategorizedProducts(e) {
     console.log(e.target.dataset)
     let selectedCategory = e.target.dataset.category
-    if(selectedCategory==='All'){
+    if (selectedCategory === 'All') {
         showCategories('All')
         showProducts(products)
         return
     }
-    let tempProducts = products.filter(item=> item.category=== selectedCategory.toLowerCase())
+    let tempProducts = products.filter(item => item.category === selectedCategory.toLowerCase())
     showCategories(selectedCategory)
     showProducts(tempProducts)
 }
