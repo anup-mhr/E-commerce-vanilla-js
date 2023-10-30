@@ -1,0 +1,62 @@
+.contact{
+    padding: 30px 60px;
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+.register{
+    margin: 30px 60px;
+}
+.register h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.register form {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.2);
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.col{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+}
+.col label{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.col input, .col textarea{
+    outline: none;
+    border: 1px solid #e1e1e1;
+    padding: 5px;
+}
+.col textarea{
+    height: 200px;
+}
+.col input::placeholder{
+    font-size: 12px;
+}
+.register form button{
+    width: 200px;
+    margin: 10px auto 0;
+}
+.right iframe{
+    height: 60%;
+}
+.right-inner{
+    font-size: 14px;
+    padding-top: 20px;
+}
+.highlight{
+    color: #da2128;
+    margin: 10px 0;
+    cursor: pointer;
+}

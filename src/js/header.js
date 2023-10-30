@@ -40,3 +40,9 @@ function calculateTotalItems(){
 // document.addEventListener('DOMContentLoaded',renderHeader())
 
 renderHeader()
+
+function copyrightDate(){
+    const footerDate = document.querySelector('#footer-date');
+    footerDate.innerHTML = new Date().getFullYear()
+}
+copyrightDate()
