@@ -1,7 +1,4 @@
-// let cart = JSON.parse(localStorage.getItem('cart')) || []
-
 const cartDOM = document.querySelector('.cart-inner')
-// let products = JSON.parse(localStorage.getItem('products')) || getProducts()
 const summaryTotal = document.querySelector('#summaryTotal')
 const summaryContainer = document.querySelector('#summaryContainer')
 const discount = document.querySelector('#discount')
@@ -13,12 +10,15 @@ function addCartItem(e) {
     let selectedItem = e.target;
     let selectedId = parseFloat(selectedItem.dataset.id)
     let search = cart.find(x => x.id === selectedId);
-    let quantity = document.querySelector('#pro-quantity')?.value || 1
-    console.log(quantity)
+    let quantity = parseFloat(document.querySelector('#pro-quantity')?.value || 1)
+    if(quantity<1){
+        alert('invald info')
+        return
+    }
     if (search === undefined) {
         cart.push({
             id: selectedId,
-            quantity: parseFloat(quantity)
+            quantity: quantity
         });
     }
     console.log(cart)
@@ -53,6 +53,8 @@ function removeCart(id) {
     cart = cart.filter(item => item.id !== id)
     cartStorage(cart)
     selectedItem.remove()
+    summaryCalculation()
+    calculateTotalItems()
     alert('item removed')
 }
 
@@ -80,19 +82,19 @@ function decrement(id) {
 }
 
 function summaryCalculation() {
-    let qty = ''
-    let price = ''
+    let totalPrice = 0
     let discountPercentage = ''
-    let totalPrice = cart.map(item => {
-        qty = item.quantity
-        let search = products.find(x => x.id === item.id)
-        price = search.price
+    let discountedPrice = cart.map(item => {
+        let qty = item.quantity
+        let search = products.find(x => x.id === item.id)   
+        let price = search.price
+        totalPrice += qty * price
         discountPercentage = search.discountPercentage
         let discountedPrice = Math.floor(price - (price * discountPercentage) / 100)
         return qty * discountedPrice
     }).reduce((x, y) => x + y)
-    summaryTotal.innerHTML = totalPrice
-    summaryContainer.innerHTML = price * qty
+    summaryTotal.innerHTML = discountedPrice
+    summaryContainer.innerHTML = totalPrice
     discount.innerHTML = Math.floor(totalPrice * discountPercentage / 100)
 }
 

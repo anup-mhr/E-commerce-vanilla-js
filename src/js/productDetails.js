@@ -1,6 +1,5 @@
 const selectedId = parseFloat(new URL(document.location).searchParams.get('id'));
 const product = document.querySelector('.product-details')
-let products = JSON.parse(localStorage.getItem('products')) || []
 
 function showProductDetails() {
     let selectedProduct = products.find(item => item.id === selectedId)

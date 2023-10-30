@@ -10,15 +10,14 @@ let categories = [
     "Home & Lifestyle",
     "Electronic Devices"]
 
-let products = JSON.parse(localStorage.getItem('products')) || getProducts()
 
-async function getProducts() {
-    let response = await fetch('data.json');
-    let data = await response.json()
-    productStorage(data)
-    console.log('fetching products')
-    return data;
-}
+// async function getProducts() {
+//     let response = await fetch('data.json');
+//     let data = await response.json()
+//     productStorage(data)
+//     console.log('fetching products')
+//     return data;
+// }
 
 function productStorage(products) {
     localStorage.setItem('products', JSON.stringify(products));
