@@ -291,6 +291,7 @@ header{
 .product-info h4{
     font-weight: 500;
     text-transform: capitalize;
+    cursor: pointer;
 }
 .product-info h3{
     color: #da2128;

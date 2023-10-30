@@ -1,21 +1,24 @@
 // let cart = JSON.parse(localStorage.getItem('cart')) || []
 
 const cartDOM = document.querySelector('.cart-inner')
-let products = JSON.parse(localStorage.getItem('products')) || getProducts()
+// let products = JSON.parse(localStorage.getItem('products')) || getProducts()
 const summaryTotal = document.querySelector('#summaryTotal')
 const summaryContainer = document.querySelector('#summaryContainer')
 const discount = document.querySelector('#discount')
 const checkoutBtn = document.querySelector('#checkoutBtn')
 
 function addCartItem(e) {
+    e.preventDefault()
     console.log('adding')
     let selectedItem = e.target;
     let selectedId = parseFloat(selectedItem.dataset.id)
     let search = cart.find(x => x.id === selectedId);
+    let quantity = document.querySelector('#pro-quantity')?.value || 1
+    console.log(quantity)
     if (search === undefined) {
         cart.push({
             id: selectedId,
-            quantity: 1
+            quantity: parseFloat(quantity)
         });
     }
     console.log(cart)
@@ -93,7 +96,7 @@ function summaryCalculation() {
     discount.innerHTML = Math.floor(totalPrice * discountPercentage / 100)
 }
 
-checkoutBtn.addEventListener('click', () => {
+checkoutBtn?.addEventListener('click', () => {
     let users = JSON.parse(localStorage.getItem('users')) || []
     if (!users) {
         alert('login please')

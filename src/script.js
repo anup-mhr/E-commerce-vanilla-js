@@ -34,7 +34,7 @@ function showProducts(products) {
         return `<div class="product">
         <img src="${thumbnail}" alt="${title}" class="product-img">
         <div class="product-info">
-            <h4>${title}</h4>
+            <a href='/pages/productDetails.html?id=${id}'><h4>${title}</h4></a>
             <h3>$ ${discountedPrice.toFixed(2)}</h3>
             <p><span>$ ${price}</span> -${discountPercentage}%</p>
             <div class="stars">${itemRating}</div >

@@ -8,7 +8,7 @@
         "rating": 4.69,
         "stock": 94,
         "brand": "Apple",
-        "sub-category": "smartphones",
+        "subCategory": "smartphones",
         "category": "electronic devices",
         "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
         "images": [
@@ -28,7 +28,7 @@
         "rating": 4.44,
         "stock": 34,
         "brand": "Apple",
-        "sub-category": "smartphones",
+        "subCategory": "smartphones",
         "category": "electronic devices",
         "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
         "images": [
@@ -47,7 +47,7 @@
         "rating": 4.09,
         "stock": 36,
         "brand": "Samsung",
-        "sub-category": "smartphones",
+        "subCategory": "smartphones",
         "category": "electronic devices",
         "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
         "images": [
@@ -63,7 +63,7 @@
         "rating": 4.3,
         "stock": 123,
         "brand": "OPPO",
-        "sub-category": "smartphones",
+        "subCategory": "smartphones",
         "category": "electronic devices",
         "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
         "images": [
@@ -83,7 +83,7 @@
         "rating": 4.09,
         "stock": 32,
         "brand": "Huawei",
-        "sub-category": "smartphones",
+        "subCategory": "smartphones",
         "category": "electronic devices",
         "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
         "images": [
@@ -101,7 +101,7 @@
         "rating": 4.57,
         "stock": 83,
         "brand": "Apple",
-        "sub-category": "laptops",
+        "subCategory": "laptops",
         "category": "electronic devices",
         "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
         "images": [
@@ -120,7 +120,7 @@
         "rating": 4.25,
         "stock": 50,
         "brand": "Samsung",
-        "sub-category": "laptops",
+        "subCategory": "laptops",
         "category": "electronic devices",
         "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
         "images": [
@@ -139,7 +139,7 @@
         "rating": 4.43,
         "stock": 68,
         "brand": "Microsoft Surface",
-        "sub-category": "laptops",
+        "subCategory": "laptops",
         "category": "electronic devices",
         "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
         "images": [
@@ -159,7 +159,7 @@
         "rating": 4.54,
         "stock": 96,
         "brand": "Infinix",
-        "sub-category": "laptops",
+        "subCategory": "laptops",
         "category": "electronic devices",
         "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
         "images": [
@@ -179,7 +179,7 @@
         "rating": 4.43,
         "stock": 89,
         "brand": "HP Pavilion",
-        "sub-category": "laptops",
+        "subCategory": "laptops",
         "category": "electronic devices",
         "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
         "images": [
@@ -198,7 +198,7 @@
         "rating": 4.26,
         "stock": 65,
         "brand": "Impression of Acqua Di Gio",
-        "sub-category": "fragrances",
+        "subCategory": "fragrances",
         "category": "health & beauty",
         "thumbnail": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
         "images": [
@@ -217,7 +217,7 @@
         "rating": 4,
         "stock": 52,
         "brand": "Royal_Mirage",
-        "sub-category": "fragrances",
+        "subCategory": "fragrances",
         "category": "health & beauty",
         "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
         "images": [
@@ -237,7 +237,7 @@
         "rating": 4.59,
         "stock": 61,
         "brand": "Fog Scent Xpressio",
-        "sub-category": "fragrances",
+        "subCategory": "fragrances",
         "category": "health & beauty",
         "thumbnail": "https://i.dummyjson.com/data/products/13/thumbnail.webp",
         "images": [
@@ -257,7 +257,7 @@
         "rating": 4.21,
         "stock": 114,
         "brand": "Al Munakh",
-        "sub-category": "fragrances",
+        "subCategory": "fragrances",
         "category": "health & beauty",
         "thumbnail": "https://i.dummyjson.com/data/products/14/thumbnail.jpg",
         "images": [
@@ -276,7 +276,7 @@
         "rating": 4.7,
         "stock": 105,
         "brand": "Lord - Al-Rehab",
-        "sub-category": "fragrances",
+        "subCategory": "fragrances",
         "category": "health & beauty",
         "thumbnail": "https://i.dummyjson.com/data/products/15/thumbnail.jpg",
         "images": [
@@ -296,7 +296,7 @@
         "rating": 4.83,
         "stock": 110,
         "brand": "L'Oreal Paris",
-        "sub-category": "skincare",
+        "subCategory": "skincare",
         "category": "health & beauty",
         "thumbnail": "https://i.dummyjson.com/data/products/16/thumbnail.jpg",
         "images": [
@@ -316,7 +316,7 @@
         "rating": 4.52,
         "stock": 78,
         "brand": "Hemani Tea",
-        "sub-category": "skincare",
+        "subCategory": "skincare",
         "category": "health & beauty",
         "thumbnail": "https://i.dummyjson.com/data/products/17/thumbnail.jpg",
         "images": [
@@ -335,7 +335,7 @@
         "rating": 4.56,
         "stock": 88,
         "brand": "Dermive",
-        "sub-category": "skincare",
+        "subCategory": "skincare",
         "category": "health & beauty",
         "thumbnail": "https://i.dummyjson.com/data/products/18/thumbnail.jpg",
         "images": [
@@ -355,7 +355,7 @@
         "rating": 4.42,
         "stock": 54,
         "brand": "ROREC White Rice",
-        "sub-category": "skincare",
+        "subCategory": "skincare",
         "category": "health & beauty",
         "thumbnail": "https://i.dummyjson.com/data/products/19/thumbnail.jpg",
         "images": [
@@ -374,7 +374,7 @@
         "rating": 4.06,
         "stock": 140,
         "brand": "Fair & Clear",
-        "sub-category": "skincare",
+        "subCategory": "skincare",
         "category": "health & beauty",
         "thumbnail": "https://i.dummyjson.com/data/products/20/thumbnail.jpg",
         "images": [
@@ -505,7 +505,7 @@
         "rating": 4.41,
         "stock": 17,
         "brand": "Flying Wooden",
-        "sub-category": "home-decoration",
+        "subCategory": "home-decoration",
         "category": "home & lifestyle",
         "thumbnail": "https://i.dummyjson.com/data/products/27/thumbnail.webp",
         "images": [
@@ -544,7 +544,7 @@
         "rating": 4.44,
         "stock": 7,
         "brand": "luxury palace",
-        "sub-category": "home-decoration",
+        "subCategory": "home-decoration",
         "category": "home-decoration",
         "thumbnail": "https://i.dummyjson.com/data/products/29/thumbnail.webp",
         "images": [
@@ -564,7 +564,7 @@
         "rating": 4.92,
         "stock": 54,
         "brand": "Golden",
-        "sub-category": "home-decoration",
+        "subCategory": "home-decoration",
         "category": "home-decoration",
         "thumbnail": "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
         "images": [
@@ -583,7 +583,7 @@
         "rating": 4.16,
         "stock": 140,
         "brand": "Furniture Bed Set",
-        "sub-category": "furniture",
+        "subCategory": "furniture",
         "category": "home-decoration",
         "thumbnail": "https://i.dummyjson.com/data/products/31/thumbnail.jpg",
         "images": [
@@ -603,7 +603,7 @@
         "rating": 4.74,
         "stock": 30,
         "brand": "Ratttan Outdoor",
-        "sub-category": "furniture",
+        "subCategory": "furniture",
         "category": "home-decoration",
         "thumbnail": "https://i.dummyjson.com/data/products/32/thumbnail.jpg",
         "images": [
@@ -622,7 +622,7 @@
         "rating": 4.31,
         "stock": 106,
         "brand": "Kitchen Shelf",
-        "sub-category": "furniture",
+        "subCategory": "furniture",
         "category": "home-decoration",
         "thumbnail": "https://i.dummyjson.com/data/products/33/thumbnail.jpg",
         "images": [
@@ -642,7 +642,7 @@
         "rating": 4.01,
         "stock": 136,
         "brand": "Multi Purpose",
-        "sub-category": "furniture",
+        "subCategory": "furniture",
         "category": "home-decoration",
         "thumbnail": "https://i.dummyjson.com/data/products/34/thumbnail.jpg",
         "images": [
@@ -662,7 +662,7 @@
         "rating": 4.06,
         "stock": 68,
         "brand": "AmnaMart",
-        "sub-category": "furniture",
+        "subCategory": "furniture",
         "category": "home-decoration",
         "thumbnail": "https://i.dummyjson.com/data/products/35/thumbnail.jpg",
         "images": [
@@ -682,7 +682,7 @@
         "rating": 4.26,
         "stock": 39,
         "brand": "Professional Wear",
-        "sub-category": "tops",
+        "subCategory": "tops",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/36/thumbnail.jpg",
         "images": [
@@ -702,7 +702,7 @@
         "rating": 4.52,
         "stock": 107,
         "brand": "Soft Cotton",
-        "sub-category": "tops",
+        "subCategory": "tops",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/37/thumbnail.jpg",
         "images": [
@@ -722,7 +722,7 @@
         "rating": 4.8,
         "stock": 20,
         "brand": "Soft Cotton",
-        "sub-category": "tops",
+        "subCategory": "tops",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/38/thumbnail.jpg",
         "images": [
@@ -741,7 +741,7 @@
         "rating": 4.55,
         "stock": 55,
         "brand": "Top Sweater",
-        "sub-category": "tops",
+        "subCategory": "tops",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/39/thumbnail.jpg",
         "images": [
@@ -761,7 +761,7 @@
         "rating": 4.91,
         "stock": 84,
         "brand": "Top Sweater",
-        "sub-category": "tops",
+        "subCategory": "tops",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/40/thumbnail.jpg",
         "images": [
@@ -778,7 +778,7 @@
         "rating": 4.65,
         "stock": 21,
         "brand": "RED MICKY MOUSE..",
-        "sub-category": "womens-dresses",
+        "subCategory": "womens-dresses",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/41/thumbnail.webp",
         "images": [
@@ -798,7 +798,7 @@
         "rating": 4.05,
         "stock": 148,
         "brand": "Digital Printed",
-        "sub-category": "womens-dresses",
+        "subCategory": "womens-dresses",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/42/thumbnail.jpg",
         "images": [
@@ -818,7 +818,7 @@
         "rating": 4.31,
         "stock": 150,
         "brand": "Ghazi Fabric",
-        "sub-category": "womens-dresses",
+        "subCategory": "womens-dresses",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/43/thumbnail.jpg",
         "images": [
@@ -838,7 +838,7 @@
         "rating": 4.03,
         "stock": 2,
         "brand": "Ghazi Fabric",
-        "sub-category": "womens-dresses",
+        "subCategory": "womens-dresses",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/44/thumbnail.jpg",
         "images": [
@@ -858,7 +858,7 @@
         "rating": 4.67,
         "stock": 96,
         "brand": "IELGY",
-        "sub-category": "womens-dresses",
+        "subCategory": "womens-dresses",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/45/thumbnail.jpg",
         "images": [
@@ -878,7 +878,7 @@
         "rating": 4.14,
         "stock": 72,
         "brand": "IELGY fashion",
-        "sub-category": "womens-shoes",
+        "subCategory": "womens-shoes",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/46/thumbnail.jpg",
         "images": [
@@ -898,7 +898,7 @@
         "rating": 4.19,
         "stock": 50,
         "brand": "Synthetic Leather",
-        "sub-category": "womens-shoes",
+        "subCategory": "womens-shoes",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/47/thumbnail.jpeg",
         "images": [
@@ -917,7 +917,7 @@
         "rating": 4.02,
         "stock": 25,
         "brand": "Sandals Flip Flops",
-        "sub-category": "womens-shoes",
+        "subCategory": "womens-shoes",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/48/thumbnail.jpg",
         "images": [
@@ -937,7 +937,7 @@
         "rating": 4.72,
         "stock": 107,
         "brand": "Maasai Sandals",
-        "sub-category": "womens-shoes",
+        "subCategory": "womens-shoes",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/49/thumbnail.jpg",
         "images": [
@@ -956,7 +956,7 @@
         "rating": 4.33,
         "stock": 46,
         "brand": "Arrivals Genuine",
-        "sub-category": "womens-shoes",
+        "subCategory": "womens-shoes",
         "category": "women's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/50/thumbnail.jpg",
         "images": [
@@ -974,7 +974,7 @@
         "rating": 4.26,
         "stock": 132,
         "brand": "Vintage Apparel",
-        "sub-category": "mens-shirts",
+        "subCategory": "mens-shirts",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/51/thumbnail.jpg",
         "images": [
@@ -993,7 +993,7 @@
         "rating": 4.52,
         "stock": 128,
         "brand": "FREE FIRE",
-        "sub-category": "mens-shirts",
+        "subCategory": "mens-shirts",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/52/thumbnail.jpg",
         "images": [
@@ -1013,7 +1013,7 @@
         "rating": 4.89,
         "stock": 6,
         "brand": "Vintage Apparel",
-        "sub-category": "mens-shirts",
+        "subCategory": "mens-shirts",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/53/thumbnail.jpg",
         "images": [
@@ -1033,7 +1033,7 @@
         "rating": 4.62,
         "stock": 136,
         "brand": "The Warehouse",
-        "sub-category": "mens-shirts",
+        "subCategory": "mens-shirts",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/54/thumbnail.jpg",
         "images": [
@@ -1053,7 +1053,7 @@
         "rating": 4.9,
         "stock": 122,
         "brand": "The Warehouse",
-        "sub-category": "mens-shirts",
+        "subCategory": "mens-shirts",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/55/thumbnail.jpg",
         "images": [
@@ -1073,7 +1073,7 @@
         "rating": 4.38,
         "stock": 6,
         "brand": "Sneakers",
-        "sub-category": "mens-shoes",
+        "subCategory": "mens-shoes",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/56/thumbnail.jpg",
         "images": [
@@ -1094,7 +1094,7 @@
         "rating": 4.91,
         "stock": 20,
         "brand": "Rubber",
-        "sub-category": "mens-shoes",
+        "subCategory": "mens-shoes",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/57/thumbnail.jpg",
         "images": [
@@ -1114,7 +1114,7 @@
         "rating": 4.41,
         "stock": 68,
         "brand": "The Warehouse",
-        "sub-category": "mens-shoes",
+        "subCategory": "mens-shoes",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/58/thumbnail.jpg",
         "images": [
@@ -1134,7 +1134,7 @@
         "rating": 4.33,
         "stock": 137,
         "brand": "Sneakers",
-        "sub-category": "mens-shoes",
+        "subCategory": "mens-shoes",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/59/thumbnail.jpg",
         "images": [
@@ -1154,7 +1154,7 @@
         "rating": 4.55,
         "stock": 129,
         "brand": "Sneakers",
-        "sub-category": "mens-shoes",
+        "subCategory": "mens-shoes",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/60/thumbnail.jpg",
         "images": [
@@ -1173,7 +1173,7 @@
         "rating": 4.63,
         "stock": 91,
         "brand": "Naviforce",
-        "sub-category": "mens-watches",
+        "subCategory": "mens-watches",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/61/thumbnail.jpg",
         "images": [
@@ -1191,7 +1191,7 @@
         "rating": 4.05,
         "stock": 95,
         "brand": "SKMEI 9117",
-        "sub-category": "mens-watches",
+        "subCategory": "mens-watches",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/62/thumbnail.jpg",
         "images": [
@@ -1208,7 +1208,7 @@
         "rating": 4.89,
         "stock": 142,
         "brand": "SKMEI 9117",
-        "sub-category": "mens-watches",
+        "subCategory": "mens-watches",
         "category": "men's fashion",
         "thumbnail": "https://i.dummyjson.com/data/products/63/thumbnail.webp",
         "images": [

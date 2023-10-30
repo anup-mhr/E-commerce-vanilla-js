@@ -32,103 +32,14 @@
     </header>
 
     <section class="product-details">
-        <div class="product-gallery">
-            <img src="https://i.dummyjson.com/data/products/17/thumbnail.jpg" alt="" id="productImg">
-            <div class="controls">
-                <span class="control-btn active"></span>
-                <span class="control-btn"></span>
-                <span class="control-btn"></span>
-            </div>
-        </div>
-
-        <div class="product-info more-detailed">
-            <h1>iPhone 9</h1>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <h3>$ 594</h3>
-            <p><span>$ 23</span> -20%</p>
-            <div class="desc-container">
-                <h4>Product Description</h4>
-                <p class="pro-description">Style and speed. Stand out on HD video calls backed by Studio Mics. Capture
-                    ideas on the vibrant touchscreen.</p>
-            </div>
-            <form action="">
-                <div class="color-select">
-                    <p>Color</p>
-                    <label for="red">
-                        <input type="radio" name="color" id="red">
-                        <span class="color-1"></span>
-                    </label>
-                    <label for="green">
-                        <input type="radio" name="color" id="green">
-                        <span class="color-2"></span>
-                    </label>
-                    <label for="blue">
-                        <input type="radio" name="color" id="blue">
-                        <span class="color-3"></span>
-                    </label>
-                    <label for="pink">
-                        <input type="radio" name="color" id="pink">
-                        <span class="color-4"></span>
-                    </label>
-                </div>
-                <div class="quantity-select">
-                    <p>Quantity</p>
-                    <input type="number" value="1">
-                </div>
-
-                <div class="button-choice">
-                    <button class="btn">Buy</button>
-                    <button class="btn btn-fill">Add to Cart <i class="bi bi-cart3"></i></button>
-                </div>
-            </form>
-            <a href="/"><i class="bi bi-chevron-double-left"></i> continue shopping</a>
-        </div>
+        <!-- product details here -->
     </section>
 
 
     <section class="product-suggestion">
-        <h2>Different categories books you may like 💁</h2>
+        <h2>Different products you may also like 💁</h2>
         <div class="product-container">
-            <div class="product">
-                <img src="https://i.dummyjson.com/data/products/6/4.jpg" alt="" class="product-img">
-                <div class="product-info">
-                    <h4>iPhone 9</h4>
-                    <h3>$ 594</h3>
-                    <p><span>$ 23</span> -20%</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <button class="btn btn-fill">Add to Cart <i class="bi bi-cart3"></i></button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://i.dummyjson.com/data/products/1/thumbnail.jpg" alt="" class="product-img">
-                <div class="product-info">
-                    <h4>iPhone 9</h4>
-                    <h3>$ 594</h3>
-                    <p><span>$ 23</span> -20%</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <button class="btn btn-fill">Add to Cart <i class="bi bi-cart3"></i></button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://i.dummyjson.com/data/products/36/thumbnail.jpg" alt="" class="product-img">
-                <div class="product-info">
-                    <h4>iPhone 9</h4>
-                    <h3>$ 594</h3>
-                    <p><span>$ 23</span> -20%</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <button class="btn btn-fill">Add to Cart <i class="bi bi-cart3"></i></button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://i.dummyjson.com/data/products/8/thumbnail.jpg" alt="" class="product-img">
-                <div class="product-info">
-                    <h4>iPhone 9</h4>
-                    <h3>$ 594</h3>
-                    <p><span>$ 23</span> -20%</p>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <button class="btn btn-fill">Add to Cart <i class="bi bi-cart3"></i></button>
-                </div>
-            </div>
+            <!-- dynamic similar products here -->
         </div>
     </section>
 
@@ -162,6 +73,10 @@
             <p>Copyright c Anup Maharjan</p>
         </div>
     </footer>
+
+    <script src="/src/js/header.js"></script>
+    <script src="/src/js/productDetails.js"></script>
+    <script src="/src/js/cart.js"></script>
 </body>
 
 </html>
