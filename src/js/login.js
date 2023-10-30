@@ -13,6 +13,6 @@ loginBtn.addEventListener('click', e => {
     }
     checkUser.isAuth = true;
     localStorage.setItem('users', JSON.stringify(users))
-    window.location.replace('/')
     showToast(loginSuccess)
+    window.location.replace('/')
 })

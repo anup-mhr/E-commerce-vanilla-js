@@ -6,7 +6,7 @@ let removeProduct = '<i class="bi bi-cart-x"></i>Successfully Removed'
 let errorMsg = '<i class="bi bi-exclamation-circle"></i>Invalid Password or Email';
 let pleaseLogin = '<i class="bi bi-exclamation-circle"></i>Please Login to Continue';
 let invalidInfo = '<i class="bi bi-exclamation-circle"></i>Invalid Info';
-
+let cartEmpty = '<i class="bi bi-cart-x"></i>Cart is Empty'
 
 
 function showToast(msg) {
@@ -27,7 +27,9 @@ function showToast(msg) {
     if (msg.includes('Please')) {
         toast.classList.add('invalid');
     }
-    
+    if (msg.includes('Empty')) {
+        toast.classList.add('error');
+    }
 
     setTimeout(()=>{
         toast.remove();

@@ -34,6 +34,7 @@ function logout(){
 }
 
 function calculateTotalItems(){
+    if(cart.length<1) return
     let totalQuantity = cart.map(item=> item.quantity).reduce((x,y)=> x+y)
     totalQtyDOM.innerText = totalQuantity;
 }

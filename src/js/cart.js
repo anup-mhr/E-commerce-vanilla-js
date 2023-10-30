@@ -34,6 +34,10 @@ function cartStorage(cart) {
 }
 
 function generateCart() {
+    if(cart.length<1){
+        cartDOM.innerHTML = '<p><i class="bi bi-cart-x"></i>Cart is Empty</p>'
+        return
+    }
     cartDOM.innerHTML = cart.map(item => {
         let search = products.find(x => x.id === item.id);
         let { id, title, price, discountPercentage } = search
@@ -85,6 +89,7 @@ function decrement(id) {
 }
 
 function summaryCalculation() {
+    if(cart.length<1) return
     let totalPrice = 0
     let discountPercentage = ''
     let discountedPrice = cart.map(item => {
@@ -102,6 +107,10 @@ function summaryCalculation() {
 }
 
 checkoutBtn?.addEventListener('click', () => {
+    if(cart.length<1){
+        showToast(cartEmpty)
+        return
+    }
     let users = JSON.parse(localStorage.getItem('users')) || []
     if (!users) {
         showToast(pleaseLogin)

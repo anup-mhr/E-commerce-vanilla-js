@@ -30,6 +30,11 @@
     background: #da2128;
     color: #fff;
 }
+.cart-inner p{
+    text-align: center;
+    font-size: 38px;
+    padding: 30px;
+}
 .cart-summary{
     align-self: center;
     display: flex;
