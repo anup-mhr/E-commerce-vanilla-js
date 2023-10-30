@@ -12,7 +12,7 @@ function addCartItem(e) {
     let search = cart.find(x => x.id === selectedId);
     let quantity = parseFloat(document.querySelector('#pro-quantity')?.value || 1)
     if(quantity<1){
-        alert('invald info')
+        showToast(invalidInfo)
         return
     }
     if (search === undefined) {
@@ -23,6 +23,7 @@ function addCartItem(e) {
     }
     console.log(cart)
     cartStorage(cart)
+    showToast(addProduct)
     selectedItem.disabled = true
     selectedItem.innerHTML = 'Already in cart'
     calculateTotalItems()
@@ -53,9 +54,9 @@ function removeCart(id) {
     cart = cart.filter(item => item.id !== id)
     cartStorage(cart)
     selectedItem.remove()
+    showToast(removeProduct)
     summaryCalculation()
     calculateTotalItems()
-    alert('item removed')
 }
 
 function increment(id) {
@@ -65,6 +66,7 @@ function increment(id) {
     calculateTotalItems()
     generateCart()
     summaryCalculation()
+    showToast(addProduct)
 }
 
 function decrement(id) {
@@ -79,6 +81,7 @@ function decrement(id) {
     generateCart()
     calculateTotalItems()
     summaryCalculation()
+    showToast(removeProduct)
 }
 
 function summaryCalculation() {
@@ -101,12 +104,12 @@ function summaryCalculation() {
 checkoutBtn?.addEventListener('click', () => {
     let users = JSON.parse(localStorage.getItem('users')) || []
     if (!users) {
-        alert('login please')
+        showToast(pleaseLogin)
         return
     }
     let isAuth = users.find(user=> user.isAuth===true);
     if(!isAuth){
-        alert('login please')
+        showToast(pleaseLogin)
         return
     }
     window.location.replace('/pages/checkout.html')

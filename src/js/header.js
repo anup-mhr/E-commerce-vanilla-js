@@ -30,6 +30,7 @@ function logout(){
     authUser.isAuth = false;
     localStorage.setItem('users', JSON.stringify(users))
     updateHeaderBtn()
+    showToast(logoutSuccess)
 }
 
 function calculateTotalItems(){

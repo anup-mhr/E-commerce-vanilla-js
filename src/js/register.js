@@ -8,12 +8,12 @@ const dob = document.querySelector('#dob');
 const confirmPassword = document.querySelector('#confirmPassword');
 const tempAddress = document.querySelector('#tempAddress');
 
-let users = JSON.parse(localStorage.getItem('users')) || [];
+// let users = JSON.parse(localStorage.getItem('users')) || [];
 
-registerBtn.addEventListener('click',e=>{
+registerBtn.addEventListener('click', e => {
     e.preventDefault()
     addUser()
-} )
+})
 
 function addUser() {
     let user = {
@@ -26,6 +26,12 @@ function addUser() {
         tempAddress: tempAddress.value,
         permanentAddress: permanentAddress.value,
         isAuth: false
+    }
+    for (el in user) {
+        if (user[el] === '') {
+            showToast(invalidInfo)
+            return
+        }
     }
     users = [...users, user]
     usersStorage(users)
@@ -42,7 +48,7 @@ function resetForm() {
     dob.value = '';
     confirmPassword.value = '';
     tempAddress.value = '';
-  }
+}
 
 function usersStorage() {
     localStorage.setItem('users', JSON.stringify(users))

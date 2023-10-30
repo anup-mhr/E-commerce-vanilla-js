@@ -1,7 +1,12 @@
 let toastBox = document.querySelector('#toastBox')
-let successMsg = '<i class="bi bi-check-circle"></i>Successfully submitted';
-let errorMsg = '<i class="bi bi-bug"></i>Please fix the error!';
-let invalidMsg = '<i class="bi bi-exclamation-circle"></i>Invalid input, check again';
+let loginSuccess = '<i class="bi bi-check-circle"></i>Successfully Logged In';
+let logoutSuccess = '<i class="bi bi-check-circle"></i>Successfully Logged Out';
+let addProduct = '<i class="bi bi-cart-plus"></i>Added to cart'
+let removeProduct = '<i class="bi bi-cart-x"></i>Successfully Removed'
+let errorMsg = '<i class="bi bi-exclamation-circle"></i>Invalid Password or Email';
+let pleaseLogin = '<i class="bi bi-exclamation-circle"></i>Please Login to Continue';
+let invalidInfo = '<i class="bi bi-exclamation-circle"></i>Invalid Info';
+
 
 
 function showToast(msg) {
@@ -14,8 +19,15 @@ function showToast(msg) {
         toast.classList.add('error');
     }
     if (msg.includes('Invalid')) {
+        toast.classList.add('error');
+    }
+    if (msg.includes('Removed')) {
+        toast.classList.add('error');
+    }
+    if (msg.includes('Please')) {
         toast.classList.add('invalid');
     }
+    
 
     setTimeout(()=>{
         toast.remove();
