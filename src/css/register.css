@@ -1,46 +1,69 @@
-.register{
+.register {
     margin: 30px 60px;
 }
-.register h2{
+@media (max-width: 768px){
+    .register{
+        margin: 30px;
+    }
+}
+.register h2 {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .register form {
     background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 30px 60px;
     display: flex;
     flex-direction: column;
 }
-.row{
-    display: flex;
-    align-items: center;
-    gap: 50px;
+
+@media(max-width:425px) {
+    .register {
+        margin: 30px;
+    }
+
+    .register form {
+        padding: 30px;
+    }
 }
-.col{
-    width: 100%;
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    align-items: center;
+}
+
+.col {
     display: flex;
     flex-direction: column;
     margin: 8px 0;
 }
-.col label{
+
+.col label {
     font-size: 14px;
     margin-bottom: 5px;
 }
-.col input{
+
+.col input {
     outline: none;
     border: 1px solid #e1e1e1;
     padding: 5px;
 }
-.col input::placeholder{
+
+.col input::placeholder {
     font-size: 12px;
 }
-.register form button{
+
+.register form button {
     width: 200px;
     margin: 10px auto 0;
 }
 
-.login{
-    width: 330px;
+.login {
+    min-width: 300px;
+    max-width: 330px;
     margin: 30px auto;
 }

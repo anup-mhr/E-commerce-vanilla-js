@@ -8,6 +8,12 @@
     gap: 100px;
     flex-wrap: wrap;
 }
+@media (max-width: 768px){
+    .checkout{
+        margin: 30px;
+        padding: 30px;
+    }
+}
 .shipping-details, .checkout-summary{
     display: flex;
     text-align: center;
@@ -15,6 +21,11 @@
     background-color: #fff;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
     padding: 30px 35px
+}
+@media(width<500px){
+    .checkout-summary{
+        padding: 30px 15px;
+    }
 }
 .shipping-details{
     min-width: 200px;

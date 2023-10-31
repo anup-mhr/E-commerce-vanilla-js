@@ -13,21 +13,24 @@
 <body>
     <header>
         <a href="/" id="logo"><span>Every</span> Shop</a>
-        <ul class="menu-list">
-            <li><a href="/">Shop</a></li>
-            <li><a href="/pages/FAQ.html">FAQ</a></li>
-            <li><a href="/pages/contact.html">Contact</a></li>
-        </ul>
-
-        <div class="header-right">
+        <div class="header-mid">
+            <ul class="menu-list">
+                <li><a href="/">Shop</a></li>
+                <li><a href="/pages/FAQ.html">FAQ</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
             <ul class="header-auth">
                 <li><a href="/pages/login.html" class="btn">Login</a></li>
                 <li><a href="/pages/register.html" class="btn btn-fill">Register</a></li>
             </ul>
+
+        </div>
+        <div class="header-right">
             <div class="cart-logo">
                 <a href="/pages/cart.html" class="cart-btn"><i class="bi bi-cart3"></i></a>
                 <p id="total-quantity">0</p>
             </div>
+            <i class="bi bi-list" onclick="toggleHamburger()"></i>
         </div>
     </header>
 
@@ -91,6 +94,7 @@
     </footer>
 
     <script src="/src/js/faq.js"></script>
+    <script src="/src/js/header.js"></script>
 </body>
 
 </html>

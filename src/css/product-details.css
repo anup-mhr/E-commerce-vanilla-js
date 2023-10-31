@@ -8,18 +8,35 @@ h1{
     padding: 30px 60px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 768px){
+    .product-suggestion, .product-details{
+        margin: 30px;
+        padding: 30px;
+    }
+}
 .product-suggestion h2{
     margin-bottom: 30px;
 }
-.product-details{
+/* .product-details{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+} */
+
+.product-details{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
 }
-.product-gallery, .product-details .product-info{
+@media(width<600px){
+    .product-details{
+        grid-template-columns: auto;
+    }
+}
+/* .product-gallery, .product-details .product-info{
     flex-basis: 47%;
     min-width: 300px
-}
+} */
 .product-gallery{
     position: relative;
 }

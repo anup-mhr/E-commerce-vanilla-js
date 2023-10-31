@@ -43,6 +43,11 @@ function calculateTotalItems(){
 
 renderHeader()
 
+function toggleHamburger(){
+    let headerMid = document.querySelector('.header-mid')
+    headerMid.classList.toggle('show-menu')
+}
+
 function copyrightDate(){
     const footerDate = document.querySelector('#footer-date');
     footerDate.innerHTML = new Date().getFullYear()
