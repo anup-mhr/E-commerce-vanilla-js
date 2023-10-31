@@ -11,7 +11,7 @@ function addCartItem(e) {
     let selectedId = parseFloat(selectedItem.dataset.id)
     let search = cart.find(x => x.id === selectedId);
     let quantity = parseFloat(document.querySelector('#pro-quantity')?.value || 1)
-    if(quantity<1){
+    if (quantity < 1) {
         showToast(invalidInfo)
         return
     }
@@ -34,7 +34,7 @@ function cartStorage(cart) {
 }
 
 function generateCart() {
-    if(cart.length<1){
+    if (cart.length < 1) {
         cartDOM.innerHTML = '<p><i class="bi bi-cart-x"></i>Cart is Empty</p>'
         return
     }
@@ -89,12 +89,17 @@ function decrement(id) {
 }
 
 function summaryCalculation() {
-    if(cart.length<1) return
+    if (cart.length < 1) {
+        summaryTotal.innerHTML = 0
+        summaryContainer.innerHTML = 0
+        discount.innerHTML = 0
+        return
+    }
     let totalPrice = 0
     let discountPercentage = ''
     let discountedPrice = cart.map(item => {
         let qty = item.quantity
-        let search = products.find(x => x.id === item.id)   
+        let search = products.find(x => x.id === item.id)
         let price = search.price
         totalPrice += qty * price
         discountPercentage = search.discountPercentage
@@ -107,7 +112,7 @@ function summaryCalculation() {
 }
 
 checkoutBtn?.addEventListener('click', () => {
-    if(cart.length<1){
+    if (cart.length < 1) {
         showToast(cartEmpty)
         return
     }
@@ -116,8 +121,8 @@ checkoutBtn?.addEventListener('click', () => {
         showToast(pleaseLogin)
         return
     }
-    let isAuth = users.find(user=> user.isAuth===true);
-    if(!isAuth){
+    let isAuth = users.find(user => user.isAuth === true);
+    if (!isAuth) {
         showToast(pleaseLogin)
         return
     }

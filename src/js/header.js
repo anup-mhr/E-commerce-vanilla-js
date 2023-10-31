@@ -11,14 +11,14 @@ function renderHeader() {
     calculateTotalItems()
 }
 
-function updateHeaderBtn(){
-    if(!authUser) return
-    if (!authUser.isAuth){
-        headerAuth.innerHTML =`
+function updateHeaderBtn() {
+    if (!authUser) return
+    if (!authUser.isAuth) {
+        headerAuth.innerHTML = `
             <li><a href="/pages/login.html" class="btn">Login</a></li>
             <li><a href="/pages/register.html" class="btn btn-fill">Register</a></li>
         `
-    }else{
+    } else {
         headerAuth.innerHTML = `
         <p>Welcome, ${authUser.fullName}!</p>
         <li><a class="btn" onclick='logout()'>Logout</a></li>
@@ -26,16 +26,19 @@ function updateHeaderBtn(){
     }
 }
 
-function logout(){
+function logout() {
     authUser.isAuth = false;
     localStorage.setItem('users', JSON.stringify(users))
     updateHeaderBtn()
     showToast(logoutSuccess)
 }
 
-function calculateTotalItems(){
-    if(cart.length<1) return
-    let totalQuantity = cart.map(item=> item.quantity).reduce((x,y)=> x+y)
+function calculateTotalItems() {
+    if (cart.length < 1) {
+        totalQtyDOM.innerText = 0
+        return
+    }
+    let totalQuantity = cart.map(item => item.quantity).reduce((x, y) => x + y)
     totalQtyDOM.innerText = totalQuantity;
 }
 
@@ -43,12 +46,12 @@ function calculateTotalItems(){
 
 renderHeader()
 
-function toggleHamburger(){
+function toggleHamburger() {
     let headerMid = document.querySelector('.header-mid')
     headerMid.classList.toggle('show-menu')
 }
 
-function copyrightDate(){
+function copyrightDate() {
     const footerDate = document.querySelector('#footer-date');
     footerDate.innerHTML = new Date().getFullYear()
 }
